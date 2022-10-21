@@ -4,7 +4,7 @@ var bodyParser = require('body-parser')
 //framework express
 var app=express();
 // 3000 is an example port
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 3000
 //express-handlebars - https://github.com/ericf/express-handlebars
 const { engine }   = require('express-handlebars');
 // define a extensão e a instância do handlebars com o 
