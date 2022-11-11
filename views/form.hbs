@@ -9,11 +9,29 @@
 <form action="/gravar" method="POST">
     <label>Codigo</label>
     <input type="text" name="codigo" value=""/>
-    <label>Nome</label>
-    <input type="text" name="nome" value=""/>
-    <label>Endereço</label>
-    <input type="text" name="endereco" value=""/>
+    <label>Descricao</label>
+    <input type="text" name="descricao" value=""/>
+    <label>Unidade Medida</label>
+    <input type="text" name="unidademedida" value=""/>
+    <label>Preco Unitario</label>
+    <input type="text" name="precounid" value=""/>
+    <label>Estoque</label>
+    <input type="text" name="estoque" value=""/>
     <input type="submit" value="Salvar"/>
+</form>
+
+<form action="/buscarTodos" method="GET">
+    <label>Codigo</label>
+    <input type="text" name="codigo" disabled value="{{codigo}}"/>
+    <label>Descricao</label>
+    <input type="text" name="descricao" disabled value="{{descricao}}"/>
+    <label>Unidade Medida</label>
+    <input type="text" name="unidademedida" disabled value="{{unidademedida}}""/>
+    <label>Preco Unitario</label>
+    <input type="text" name="precounid" disabled value="{{precounid}}"/>
+    <label>Estoque</label>
+    <input type="text" name="estoque" disabled value="{{estoque}}"/>
+    <input type="submit" value="Buscar"/>
 </form>
 
 <form action="/buscarTodos" method="GET">
