@@ -5,7 +5,7 @@ const axios = require('axios').default;
 // http://localhost:3000
 
 const api = axios.create({
-  baseURL: "https://backexercicio.azurewebsites.net:3000",
+  baseURL: "https://tarefamysql.azurewebsites.net",
 });
 
 module.exports = api;
