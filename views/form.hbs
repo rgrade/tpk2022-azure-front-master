@@ -6,7 +6,7 @@
     </script>
 </head>
 <h1>Versão em Master</h1>
-<form action="/gravar" method="POST">
+<form action="/produto/salvar" method="POST">
     <label>Codigo</label>
     <input type="text" name="codigo" value=""/>
     <label>Descricao</label>
@@ -20,7 +20,7 @@
     <input type="submit" value="Salvar"/>
 </form>
 
-<form action="/buscarTodos" method="GET">
+<form action="/produto/listar" method="GET">
     <label>Codigo</label>
     <input type="text" name="codigo" disabled value="{{codigo}}"/>
     <label>Descricao</label>
@@ -31,15 +31,5 @@
     <input type="text" name="precounid" disabled value="{{precounid}}"/>
     <label>Estoque</label>
     <input type="text" name="estoque" disabled value="{{estoque}}"/>
-    <input type="submit" value="Buscar"/>
-</form>
-
-<form action="/buscarTodos" method="GET">
-    <label>Codigo</label>
-    <input type="text" name="codigo" disabled value="{{codigo}}"/>
-    <label>Nome</label>
-    <input type="text" name="nome" disabled value="{{nome}}"/>
-    <label>Endereço</label>
-    <input type="text" name="nome" disabled value="{{endereco}}"/>
     <input type="submit" value="Buscar"/>
 </form>
